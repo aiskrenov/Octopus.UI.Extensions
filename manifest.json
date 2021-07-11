@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "Octopus UI Extensions",
+    "version": "0.1.0",
+    "description": "Extend your Octopus Deploy dashboard view with additional information you encoded in the package name. Great for connecting you build and source control systems to Octopus.",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "content.js",
+                "extended-details.js"
+            ],
+            "matches": [
+                "http://octopus/*"
+            ]
+        }
+    ]
+}
